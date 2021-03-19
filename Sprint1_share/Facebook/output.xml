@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210303 03:08:48.189" rpa="false">
+<suite id="s1" name="Sprint19" source="D:\COMPUTER SC\Soft EN\Sprint1\RobotTest\Sprint19.robot">
+<test id="s1-t1" name="Open Website Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210303 03:08:48.354" level="INFO">Opening browser 'chrome' to base url 'http://boni-production.southeastasia.cloudapp.azure.com/index.php'.</msg>
+<status status="PASS" starttime="20210303 03:08:48.354" endtime="20210303 03:08:50.970"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Home</arg>
+</arguments>
+<msg timestamp="20210303 03:08:50.974" level="INFO">Page title is 'Home'.</msg>
+<status status="PASS" starttime="20210303 03:08:50.971" endtime="20210303 03:08:50.974"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>1_Open_Website_Page.jpg</arg>
+</arguments>
+<msg timestamp="20210303 03:08:51.429" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="1_Open_Website_Page.jpg"&gt;&lt;img src="1_Open_Website_Page.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210303 03:08:51.429" level="INFO">c:\users\kh_ni\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py:1030: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  warnings.warn("name used for saved screenshot does not match file "</msg>
+<status status="PASS" starttime="20210303 03:08:50.974" endtime="20210303 03:08:51.429"></status>
+</kw>
+<status status="PASS" starttime="20210303 03:08:48.353" endtime="20210303 03:08:51.430" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Open Content Page">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210303 03:08:51.438" endtime="20210303 03:08:51.550"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@href="/index.php/8-2021-03-02-15-57-49/4-olympic-16"]</arg>
+</arguments>
+<msg timestamp="20210303 03:08:51.657" level="INFO">Clicking element 'xpath://a[@href="/index.php/8-2021-03-02-15-57-49/4-olympic-16"]'.</msg>
+<status status="PASS" starttime="20210303 03:08:51.657" endtime="20210303 03:08:52.269"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ</arg>
+</arguments>
+<status status="PASS" starttime="20210303 03:08:52.269" endtime="20210303 03:08:52.278"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>2_Open_Content_Page.jpg</arg>
+</arguments>
+<msg timestamp="20210303 03:08:52.689" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="2_Open_Content_Page.jpg"&gt;&lt;img src="2_Open_Content_Page.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210303 03:08:52.279" endtime="20210303 03:08:52.689"></status>
+</kw>
+<status status="PASS" starttime="20210303 03:08:51.437" endtime="20210303 03:08:52.689" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Click share to Facebook button On Content Page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:a2a_button_facebook</arg>
+</arguments>
+<msg timestamp="20210303 03:08:52.691" level="INFO">Clicking element 'class:a2a_button_facebook'.</msg>
+<status status="PASS" starttime="20210303 03:08:52.691" endtime="20210303 03:08:52.771"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>NEW</arg>
+</arguments>
+<status status="PASS" starttime="20210303 03:08:52.772" endtime="20210303 03:08:52.783"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>เข้าสู่ระบบบัญชี Facebook</arg>
+</arguments>
+<status status="PASS" starttime="20210303 03:08:52.783" endtime="20210303 03:08:54.902"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>3_Login_Facebook_Page.jpg</arg>
+</arguments>
+<msg timestamp="20210303 03:08:55.110" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="3_Login_Facebook_Page.jpg"&gt;&lt;img src="3_Login_Facebook_Page.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210303 03:08:54.902" endtime="20210303 03:08:55.110"></status>
+</kw>
+<status status="PASS" starttime="20210303 03:08:52.690" endtime="20210303 03:08:55.110" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Login Facebook Sucess">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='email']</arg>
+<arg>tonhom.tik@gmail.com</arg>
+</arguments>
+<msg timestamp="20210303 03:08:55.112" level="INFO">Typing text 'tonhom.tik@gmail.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20210303 03:08:55.112" endtime="20210303 03:08:55.172"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='pass']</arg>
+<arg>khnipaphorn</arg>
+</arguments>
+<msg timestamp="20210303 03:08:55.173" level="INFO">Typing password into text field '//input[@id='pass']'.</msg>
+<msg timestamp="20210303 03:08:55.199" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210303 03:08:55.233" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210303 03:08:55.173" endtime="20210303 03:08:55.233"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20210303 03:08:55.233" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20210303 03:08:55.233" endtime="20210303 03:08:55.273"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>แชร์บน Facebook</arg>
+</arguments>
+<status status="PASS" starttime="20210303 03:08:55.274" endtime="20210303 03:08:58.623"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>4_Login_Facebook_Page_Success.jpg</arg>
+</arguments>
+<msg timestamp="20210303 03:08:58.862" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="4_Login_Facebook_Page_Success.jpg"&gt;&lt;img src="4_Login_Facebook_Page_Success.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210303 03:08:58.623" endtime="20210303 03:08:58.862"></status>
+</kw>
+<status status="PASS" starttime="20210303 03:08:55.111" endtime="20210303 03:08:58.863" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Share Sucess">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name:__CONFIRM__</arg>
+</arguments>
+<msg timestamp="20210303 03:08:58.864" level="INFO">Clicking element 'name:__CONFIRM__'.</msg>
+<status status="PASS" starttime="20210303 03:08:58.864" endtime="20210303 03:08:58.906"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210303 03:08:58.907" endtime="20210303 03:09:01.056"></status>
+</kw>
+<status status="PASS" starttime="20210303 03:08:58.864" endtime="20210303 03:09:01.056" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210303 03:08:48.191" endtime="20210303 03:09:01.058"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Sprint19">Sprint19</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

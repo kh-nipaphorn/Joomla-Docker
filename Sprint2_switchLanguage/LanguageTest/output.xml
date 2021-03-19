@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210315 22:13:35.147" rpa="false">
+<suite id="s1" name="LanguageTest" source="C:\Users\honga\Downloads\LangTest\LanguageTest.robot">
+<test id="s1-t1" name="Open Website Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210315 22:13:35.341" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4444/index.php/th'.</msg>
+<status status="PASS" starttime="20210315 22:13:35.340" endtime="20210315 22:13:44.224"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210315 22:13:44.225" endtime="20210315 22:13:44.344"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:13:44.344" endtime="20210315 22:13:44.356"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>1_Open_Website_Page.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:13:44.957" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="1_Open_Website_Page.jpg"&gt;&lt;img src="1_Open_Website_Page.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210315 22:13:44.957" level="INFO">c:\users\honga\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py:1030: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  warnings.warn("name used for saved screenshot does not match file "</msg>
+<status status="PASS" starttime="20210315 22:13:44.357" endtime="20210315 22:13:44.957"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:13:35.340" endtime="20210315 22:13:44.959" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Check Default Language (Thai)">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:13:44.961" endtime="20210315 22:13:44.970"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>2_Check_Default_Language_TH.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:13:45.380" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="2_Check_Default_Language_TH.jpg"&gt;&lt;img src="2_Check_Default_Language_TH.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:13:44.971" endtime="20210315 22:13:45.380"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:13:44.960" endtime="20210315 22:13:45.381" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Click Button Switch Language (Thai)">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TH_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210315 22:13:45.385" level="INFO">Clicking element 'xpath://*[@id="aside"]/div[1]/div/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20210315 22:13:45.384" endtime="20210315 22:13:48.521"></status>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<arguments>
+<arg>${HOMEPAGE2}</arg>
+</arguments>
+<msg timestamp="20210315 22:13:48.532" level="INFO">Current location contains 'http://localhost:4444/'.</msg>
+<status status="PASS" starttime="20210315 22:13:48.521" endtime="20210315 22:13:48.532"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<msg timestamp="20210315 22:13:48.540" level="INFO">Page title is 'หน้าหลัก'.</msg>
+<status status="PASS" starttime="20210315 22:13:48.533" endtime="20210315 22:13:48.540"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:13:48.541" endtime="20210315 22:13:48.550"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>3_Click_Button_Switch_Language_TH.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:13:49.014" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="3_Click_Button_Switch_Language_TH.jpg"&gt;&lt;img src="3_Click_Button_Switch_Language_TH.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:13:48.550" endtime="20210315 22:13:49.014"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:13:45.383" endtime="20210315 22:13:49.015" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Click Button Switch Language (English)">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${EN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210315 22:13:49.017" level="INFO">Clicking element 'xpath://*[@id="aside"]/div[1]/div/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20210315 22:13:49.017" endtime="20210315 22:13:51.889"></status>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<arguments>
+<arg>${HOMEPAGE2}</arg>
+</arguments>
+<msg timestamp="20210315 22:13:51.901" level="INFO">Current location contains 'http://localhost:4444/'.</msg>
+<status status="PASS" starttime="20210315 22:13:51.890" endtime="20210315 22:13:51.901"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Home</arg>
+</arguments>
+<msg timestamp="20210315 22:13:51.909" level="INFO">Page title is 'Home'.</msg>
+<status status="PASS" starttime="20210315 22:13:51.902" endtime="20210315 22:13:51.909"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Home</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:13:51.910" endtime="20210315 22:13:51.922"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>4_Click_Button_Switch_Language_EN.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:13:52.381" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="4_Click_Button_Switch_Language_EN.jpg"&gt;&lt;img src="4_Click_Button_Switch_Language_EN.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:13:51.923" endtime="20210315 22:13:52.381"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:13:49.017" endtime="20210315 22:13:52.382" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Open Website Page">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+</arguments>
+<msg timestamp="20210315 22:13:52.385" level="INFO">Opening url 'http://localhost:4444/index.php/th'</msg>
+<status status="PASS" starttime="20210315 22:13:52.384" endtime="20210315 22:13:55.388"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<msg timestamp="20210315 22:13:55.404" level="INFO">Page title is 'หน้าหลัก'.</msg>
+<status status="PASS" starttime="20210315 22:13:55.389" endtime="20210315 22:13:55.404"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>5_Open_Website_Page.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:13:55.856" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="5_Open_Website_Page.jpg"&gt;&lt;img src="5_Open_Website_Page.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:13:55.405" endtime="20210315 22:13:55.856"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:13:52.384" endtime="20210315 22:13:55.857" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Check Default Language (Thai)">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:13:55.860" endtime="20210315 22:13:55.869"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>6_Check_Default_Language_TH.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:13:56.252" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="6_Check_Default_Language_TH.jpg"&gt;&lt;img src="6_Check_Default_Language_TH.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:13:55.869" endtime="20210315 22:13:56.252"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:13:55.859" endtime="20210315 22:13:56.252" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Click Button Switch Language (Thai)">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TH_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210315 22:13:56.256" level="INFO">Clicking element 'xpath://*[@id="aside"]/div[1]/div/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20210315 22:13:56.255" endtime="20210315 22:13:59.232"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:13:59.233" endtime="20210315 22:13:59.286"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="content"]/div[2]/div[2]/div/h2/a</arg>
+</arguments>
+<msg timestamp="20210315 22:13:59.287" level="INFO">Clicking element 'xpath://*[@id="content"]/div[2]/div[2]/div/h2/a'.</msg>
+<status status="PASS" starttime="20210315 22:13:59.287" endtime="20210315 22:14:03.270"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:03.270" endtime="20210315 22:14:03.282"></status>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<arguments>
+<arg>http://localhost:4444/index.php/th/2021-03-14-09-09-29/3-16</arg>
+</arguments>
+<msg timestamp="20210315 22:14:03.286" level="INFO">Current location contains 'http://localhost:4444/index.php/th/2021-03-14-09-09-29/3-16'.</msg>
+<status status="PASS" starttime="20210315 22:14:03.283" endtime="20210315 22:14:03.286"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>7_Click_Button_Switch_Language_TH.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:14:03.691" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="7_Click_Button_Switch_Language_TH.jpg"&gt;&lt;img src="7_Click_Button_Switch_Language_TH.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:14:03.286" endtime="20210315 22:14:03.691"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:13:56.255" endtime="20210315 22:14:03.692" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Click Button Switch Language (English)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+</arguments>
+<msg timestamp="20210315 22:14:03.696" level="INFO">Opening url 'http://localhost:4444/index.php/th'</msg>
+<status status="PASS" starttime="20210315 22:14:03.695" endtime="20210315 22:14:06.538"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>หน้าหลัก</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:06.539" endtime="20210315 22:14:06.564"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${EN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210315 22:14:06.564" level="INFO">Clicking element 'xpath://*[@id="aside"]/div[1]/div/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20210315 22:14:06.564" endtime="20210315 22:14:09.467"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Home</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:09.467" endtime="20210315 22:14:09.486"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="content"]/div[2]/div[2]/div/h2/a</arg>
+</arguments>
+<msg timestamp="20210315 22:14:09.487" level="INFO">Clicking element 'xpath://*[@id="content"]/div[2]/div[2]/div/h2/a'.</msg>
+<status status="PASS" starttime="20210315 22:14:09.487" endtime="20210315 22:14:11.865"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>The closing ceremony of the 16th</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:11.866" endtime="20210315 22:14:11.879"></status>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<arguments>
+<arg>http://localhost:4444/index.php/en-us/new/2-the-closing-ceremony-of-the-16th-national-computer-olympics-and-the-results</arg>
+</arguments>
+<msg timestamp="20210315 22:14:11.885" level="INFO">Current location contains 'http://localhost:4444/index.php/en-us/new/2-the-closing-ceremony-of-the-16th-national-computer-olympics-and-the-results'.</msg>
+<status status="PASS" starttime="20210315 22:14:11.880" endtime="20210315 22:14:11.885"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>8_Click_Button_Switch_Language_EN.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:14:12.325" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="8_Click_Button_Switch_Language_EN.jpg"&gt;&lt;img src="8_Click_Button_Switch_Language_EN.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:14:11.885" endtime="20210315 22:14:12.325"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:14:03.695" endtime="20210315 22:14:12.326" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Open Content Page">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${CONTENT}</arg>
+</arguments>
+<msg timestamp="20210315 22:14:12.328" level="INFO">Opening url 'http://localhost:4444/index.php/th/2021-03-14-09-09-29/3-16'</msg>
+<status status="PASS" starttime="20210315 22:14:12.328" endtime="20210315 22:14:14.667"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:14.668" endtime="20210315 22:14:14.678"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>9_Open_Website_Page.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:14:15.132" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="9_Open_Website_Page.jpg"&gt;&lt;img src="9_Open_Website_Page.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:14:14.679" endtime="20210315 22:14:15.132"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:14:12.327" endtime="20210315 22:14:15.133" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Check Default Language (Thai)">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:15.136" endtime="20210315 22:14:15.144"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>10_Check_Default_Language_TH.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:14:15.540" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="10_Check_Default_Language_TH.jpg"&gt;&lt;img src="10_Check_Default_Language_TH.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:14:15.145" endtime="20210315 22:14:15.540"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:14:15.136" endtime="20210315 22:14:15.540" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Click Button Switch Language (Thai)">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TH_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210315 22:14:15.544" level="INFO">Clicking element 'xpath://*[@id="aside"]/div[1]/div/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20210315 22:14:15.543" endtime="20210315 22:14:17.905"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:17.906" endtime="20210315 22:14:17.951"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>11_Click_Button_Switch_Language_TH.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:14:18.386" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="11_Click_Button_Switch_Language_TH.jpg"&gt;&lt;img src="11_Click_Button_Switch_Language_TH.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:14:17.952" endtime="20210315 22:14:18.386"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:14:15.543" endtime="20210315 22:14:18.387" critical="yes"></status>
+</test>
+<test id="s1-t12" name="Click Button Switch Language (English)">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${EN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210315 22:14:18.390" level="INFO">Clicking element 'xpath://*[@id="aside"]/div[1]/div/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20210315 22:14:18.390" endtime="20210315 22:14:20.609"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>The closing ceremony of the 16th</arg>
+</arguments>
+<status status="PASS" starttime="20210315 22:14:20.609" endtime="20210315 22:14:20.618"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>12_Click_Button_Switch_Language_EN.jpg</arg>
+</arguments>
+<msg timestamp="20210315 22:14:21.064" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="12_Click_Button_Switch_Language_EN.jpg"&gt;&lt;img src="12_Click_Button_Switch_Language_EN.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210315 22:14:20.619" endtime="20210315 22:14:21.064"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210315 22:14:21.065" endtime="20210315 22:14:23.200"></status>
+</kw>
+<status status="PASS" starttime="20210315 22:14:18.389" endtime="20210315 22:14:23.201" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210315 22:13:35.148" endtime="20210315 22:14:23.203"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="12" fail="0">Critical Tests</stat>
+<stat pass="12" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="12" fail="0" id="s1" name="LanguageTest">LanguageTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210315 22:13:52.383" level="WARN">Multiple test cases with name 'Open Website Page' executed in test suite 'LanguageTest'.</msg>
+<msg timestamp="20210315 22:13:55.859" level="WARN">Multiple test cases with name 'Check Default Language (Thai)' executed in test suite 'LanguageTest'.</msg>
+<msg timestamp="20210315 22:13:56.254" level="WARN">Multiple test cases with name 'Click Button Switch Language (Thai)' executed in test suite 'LanguageTest'.</msg>
+<msg timestamp="20210315 22:14:03.694" level="WARN">Multiple test cases with name 'Click Button Switch Language (English)' executed in test suite 'LanguageTest'.</msg>
+<msg timestamp="20210315 22:14:15.135" level="WARN">Multiple test cases with name 'Check Default Language (Thai)' executed in test suite 'LanguageTest'.</msg>
+<msg timestamp="20210315 22:14:15.542" level="WARN">Multiple test cases with name 'Click Button Switch Language (Thai)' executed in test suite 'LanguageTest'.</msg>
+<msg timestamp="20210315 22:14:18.388" level="WARN">Multiple test cases with name 'Click Button Switch Language (English)' executed in test suite 'LanguageTest'.</msg>
+</errors>
+</robot>
